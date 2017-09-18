@@ -3,8 +3,8 @@ Nespresso 咖啡藝術節 Landing page 切版
 
 ---------------------------------------
 Demo site
--   [Web](https://javaok1987.github.io/nespresso-festival/)
--   [Mobile](https://javaok1987.github.io/nespresso-festival/mobile.html)
+-   [Web](https://goo.gl/bKY71o)
+-   [Mobile](https://goo.gl/3BGGwr)
 
 ---------------------------------------
 Technology colophon
