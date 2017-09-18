@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <ellipse id="a" cx="15.732" cy="16" rx="15.453" ry="15.4"/>
+        <linearGradient id="d" x1="31.753%" x2="52.246%" y1="107.173%" y2="-6.733%">
+            <stop offset="0%" stop-color="#35271C"/>
+            <stop offset="100%" stop-color="#DECEAB"/>
+        </linearGradient>
+        <ellipse id="c" cx="8.003" cy="12.375" rx="8.003" ry="4.125"/>
+        <filter id="b" width="112.5%" height="148.5%" x="-6.2%" y="-12.1%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0.251992985 0 0 0 0 0.208771177 0 0 0 0 0.159374824 0 0 0 1 0"/>
+        </filter>
+        <linearGradient id="f" x1="30.774%" x2="5.49%" y1="45.398%" y2="45.398%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity=".5"/>
+            <stop offset="100%" stop-opacity=".5"/>
+        </linearGradient>
+        <path id="e" d="M2.637 2.75h11.162l1.103 9.27c-.824 2.22-3.032 3.345-6.623 3.38-3.592.033-5.8-1.093-6.623-3.38l.98-9.27z"/>
+        <linearGradient id="h" x1=".412%" x2="96.071%" y1="33.695%" y2="110.011%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity="0"/>
+            <stop offset="25.404%" stop-color="#FFF" stop-opacity=".196"/>
+            <stop offset="39.489%" stop-color="#FFF" stop-opacity=".49"/>
+            <stop offset="100%" stop-opacity="0"/>
+        </linearGradient>
+        <ellipse id="g" cx="8.279" cy="2.75" rx="5.519" ry="2.75"/>
+        <radialGradient id="i" cy="37.849%" r="170.73%" fx="50%" fy="37.849%" gradientTransform="matrix(0 1 -.49827 0 .689 -.122)">
+            <stop offset=".419%" stop-color="#724C14"/>
+            <stop offset="100%" stop-color="#C27F1E"/>
+        </radialGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#A79378" fill-opacity=".2" xlink:href="#a"/>
+        <ellipse cx="15.732" cy="16" stroke="#DECEAB" rx="14.953" ry="14.9"/>
+        <g transform="translate(8.005 7.75)">
+            <use fill="#000" filter="url(#b)" xlink:href="#c"/>
+            <use fill="url(#d)" xlink:href="#c"/>
+            <use fill="#A79378" xlink:href="#e"/>
+            <use fill="url(#f)" fill-opacity=".5" xlink:href="#e"/>
+            <g>
+                <use fill="url(#d)" xlink:href="#g"/>
+                <use fill="url(#h)" xlink:href="#g"/>
+            </g>
+            <ellipse cx="8.279" cy=".825" fill="url(#i)" opacity=".523" rx="1.656" ry="1"/>
+        </g>
+    </g>
+</svg>
