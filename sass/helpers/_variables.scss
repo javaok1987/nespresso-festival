@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+// Font Family
+$body-font-family : 'Helvetica','\5FAE\8EDF\6B63\9ED1\9AD4','Microsoft JhengHei','Apple LiGothic Medium','simhei','Microsoft YaHei', 'Helvetica', Helvetica, Arial, sans-serif;
+
+// Weights
+$font-weight-regular : 500;
+$font-weight-bold    : 600;
+
+// Layout
+$main-width           : 640px;
+
+// Colors
+$color-white: #fff;
+$color-main: #deceab;
+$color-second: #a89378;
+$color-third: #a79378;
+
+$font-color-default: #e6e6e6;
+$font-color-inverse: #4a4a4a;
+$font-color-white: $color-white;
+
+$background-color-default: #1e1e1e;
+$background-color-inverse: $color-main;
+
+$active-border-color: #4a7;
+$active-font-color: #396;

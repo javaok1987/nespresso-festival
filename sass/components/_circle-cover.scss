@@ -1,0 +1,57 @@
+.circle-cover {
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  cursor: pointer;
+  float: left;
+}
+
+.circle-cover:after {
+  display: inline-block;
+   position: absolute;
+  top:0;
+  left: 0;
+  border-radius: 50%;
+  content: '';
+  box-sizing: content-box;
+  backface-visibility: hidden;
+}
+
+.circle-cover:before {
+  position: relative;
+  display: block;
+  font-family: 'FontAwesome', sans-serif;
+  font-size: 2.5rem;
+  z-index: 1;
+  line-height: 160px;
+}
+
+
+.fontawesome {
+  box-shadow: 0 0 0 3px #d9c9a7;
+}
+
+.fontawesome:after {
+  width: 160px;
+  height: 160px;
+  background: #d9c9a7;
+  transition: transform .2s, opacity .2s;
+}
+
+.fontawesome:before {
+  color: #52292A;
+  transition: color .2s;
+}
+
+.fontawesome:hover:after {
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+.fontawesome:hover:before {
+  color: white;
+}
