@@ -42,17 +42,15 @@ TAT.adTrack = (function() {
 
     init = function() {
 
-      var className = 'fixed';
+      var className = 'fixed',
+        $footer = document.getElementsByClassName('footer')[0],
+        $sets = document.getElementById('set-list'),
+        $all = document.getElementById('all-list');
 
       var watchScroll = debounce(function() {
 
-        var $footer = document.getElementsByClassName('footer')[0],
-          $sets = document.getElementById('set-list'),
-          $all = document.getElementById('all-list');
-
         if(isElementInViewport($sets)) {
           if(isElementInViewport($all)) {
-            console.log('remove')
             if($footer.classList) {
               $footer.classList.remove(className);
               $all.classList.remove(className);
@@ -64,7 +62,6 @@ TAT.adTrack = (function() {
                 '(\\b|$)', 'gi'), ' ');
             }
           } else {
-            console.log('add')
             if($footer.classList) {
               $footer.classList.add(className);
               $all.classList.add(className);
@@ -73,14 +70,20 @@ TAT.adTrack = (function() {
               $all.className += ' ' + className;
             }
           }
-
+        } else {
+          if($footer.classList) {
+            $footer.classList.remove(className);
+            $all.classList.remove(className);
+          } else {
+            $footer.className = $footer.className.replace(new RegExp('(^|\\b)' + className.split(' ').join(
+                '|') +
+              '(\\b|$)', 'gi'), ' ');
+            $all.className = $all.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') +
+              '(\\b|$)', 'gi'), ' ');
+          }
         }
 
-
-
-
-
-      }, 500); // 每500ms最多觸發一次.
+      }, 100); // 每100ms最多觸發一次.
 
       window.addEventListener('scroll', watchScroll);
     },

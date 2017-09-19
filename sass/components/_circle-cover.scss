@@ -1,57 +1,47 @@
-.circle-cover {
-  display: inline-block;
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  cursor: pointer;
-  float: left;
-}
+$cover-color: #deceab;
 
-.circle-cover:after {
-  display: inline-block;
-   position: absolute;
-  top:0;
-  left: 0;
-  border-radius: 50%;
-  content: '';
-  box-sizing: content-box;
-  backface-visibility: hidden;
-}
+#nespresso-festival-web,
+#nespresso-festival-mobile {
+  .circle-cover {
+    display: inline-block;
+    float: left;
 
-.circle-cover:before {
-  position: relative;
-  display: block;
-  font-family: 'FontAwesome', sans-serif;
-  font-size: 2.5rem;
-  z-index: 1;
-  line-height: 160px;
-}
+    width: 160px;
+    height: 160px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 
+    cursor: pointer;
+    text-align: center;
 
-.fontawesome {
-  box-shadow: 0 0 0 3px #d9c9a7;
-}
+    border-radius: 50%;
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
 
-.fontawesome:after {
-  width: 160px;
-  height: 160px;
-  background: #d9c9a7;
-  transition: transform .2s, opacity .2s;
-}
+      display: inline-block;
 
-.fontawesome:before {
-  color: #52292A;
-  transition: color .2s;
-}
+      box-sizing: content-box;
+      width: 160px;
+      height: 160px;
 
-.fontawesome:hover:after {
-  transform: scale(1.5);
-  opacity: 0;
-}
+      content: '';
+      transition: transform .4s, opacity .4s;
 
-.fontawesome:hover:before {
-  color: white;
+      opacity: .4;
+      border-radius: 50%;
+      background-color: $color-second;
+
+      backface-visibility: hidden;
+    }
+    &:hover {
+      &:after {
+        transition: transform .2s, opacity .2s;
+        transform: scale(1.5);
+
+        opacity: 0;
+      }
+    }
+  }
 }

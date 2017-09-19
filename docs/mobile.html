@@ -27,11 +27,11 @@
   <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 </head>
 
-<body>
+<body id="nespresso-festival-mobile">
   <header id="full-banner-block" class="container">
     <div class="slogan row clearfix">
       <img src="./content/img/m/visual-banner.png" srcset="./content/img/m/visual-banner@2x.png 2x,
-                     /content/img/m/visual-banner@3x.png 3x" class="visual-banner">
+                     ./content/img/m/visual-banner@3x.png 3x" class="visual-banner">
       <h1 class="pageTitle"><span class="logo">Nespresso</span> 咖啡藝術節</h1>
       <div class="secondTitle">
         咖啡機全系列最高折扣NT$4,000！
@@ -53,8 +53,8 @@
             <div class="prod">
               <a class="" href="#minimalism">
               <img class="prod-photo" src="./content/img/m/type01.png" srcset="
-                            /content/img/m/type01@2x.png 2x,
-                            /content/img/m/type01@3x.png 3x" alt="純粹黑咖啡">
+                            ./content/img/m/type01@2x.png 2x,
+                            ./content/img/m/type01@3x.png 3x" alt="純粹黑咖啡">
               </a>
               <h4 class="prod-name">純粹黑咖啡</h4>
               <a class="btn" href="#minimalism">極簡主義</a>
@@ -64,7 +64,7 @@
             <div class="prod">
               <a class="" href="#mix-fashion">
               <img class="prod-photo" src="./content/img/m/type02.png" srcset="./content/img/m/type02@2x.png 2x,
-                     /content/img/m/type02@3x.png 3x" alt="牛奶咖啡">
+                     ./content/img/m/type02@3x.png 3x" alt="牛奶咖啡">
                      </a>
               <h4 class="prod-name">牛奶咖啡</h4>
               <a class="btn" href="#mix-fashion">混搭時尚</a>
@@ -74,7 +74,7 @@
             <div class="prod">
               <a class="" href="#master-doctrine">
               <img class="prod-photo" src="./content/img/m/type03.png" srcset="./content/img/m/type03@2x.png 2x,
-                     /content/img/m/type03@3x.png 3x" alt="特調咖啡">
+                     ./content/img/m/type03@3x.png 3x" alt="特調咖啡">
                    </a>
               <h4 class="prod-name">特調咖啡</h4>
               <a class="btn" href="#master-doctrine">創作大師</a>
@@ -101,10 +101,10 @@
         </header>
         <div class="prod-slider">
           <div class="prod-photo-wrap">
-            <div class="prod-photo"><img src="./content/img/C30-TW-WH-NE.png" srcset="./content/img/C30-TW-WH-NE@2x.png 2x, /content/img/C30-TW-WH-NE@3x.png 3x"></div>
+            <div class="prod-photo"><img src="./content/img/C30-TW-WH-NE.png" srcset="./content/img/C30-TW-WH-NE@2x.png 2x, ./content/img/C30-TW-WH-NE@3x.png 3x"></div>
           </div>
           <div class="prod-photo-wrap">
-            <div class="prod-photo"><img src="./content/img/C40-TW-RE-NE.png" srcset="./content/img/C40-TW-RE-NE@2x.png 2x, /content/img/C40-TW-RE-NE@3x.png 3x"></div>
+            <div class="prod-photo"><img src="./content/img/C40-TW-RE-NE.png" srcset="./content/img/C40-TW-RE-NE@2x.png 2x, ./content/img/C40-TW-RE-NE@3x.png 3x"></div>
           </div>
         </div>
         <div class="prod-list">
@@ -130,8 +130,81 @@
           </div>
         </div>
       </div>
+      <!-- The Modal List -->
+      <div id="intro-box-prod01" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <article class="grid">
+            <div class="container">
+              <div class="row clearfix">
+                <div class="column full">
+                  <div class="prod-intro">
+                    <div class="prod-title">
+                      2017 全新史上最迷你咖啡機
+                      <strong>Essenza mini <br>全系列現折 NT$500</strong>
+                    </div>
+                    <div class="prod-detail">
+                      <ul>
+                        <li>體積（寬x深x高）：11 cm x 32.5 cm x 20.5 cm </li>
+                        <li>可拆卸式水箱：0.6 升 </li>
+                        <li>膠囊儲存盒容量：6 </li>
+                        <li>壓力：19 bar </li>
+                        <li>重量：2.3 公斤 </li>
+                        <li>可自行設定或9分鐘後自動關機</li>
+                      </ul>
+                    </div>
+                    <div class="prod-note">
+                      線上註冊咖啡機可享2年保固
+                    </div>
+                    <div class="prod-notice">
+                      *活動至2017/11/13, 折價將自動顯示於結帳頁面
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div id="intro-box-prod02" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <article class="grid">
+            <div class="container">
+              <div class="row clearfix">
+                <div class="column full">
+                  <div class="prod-intro">
+                    <div class="prod-title">
+                      Nespresso 入門經典款
+                      <strong>Inissia 全系列單機現折NT$1,000</strong>
+                    </div>
+                    <div class="prod-detail">
+                      <ul>
+                        <li>體積（寬x深x高）：12 cm x 32.1 cm x 23 cm</li>
+                        <li>可拆卸式水箱：0.8升</li>
+                        <li>膠囊儲存盒容量：10</li>
+                        <li>壓力：19 bar</li>
+                        <li>重量：2.4 公斤</li>
+                        <li>可自行設定或9分鐘後自動關機</li>
+                      </ul>
+                    </div>
+                    <div class="prod-note">
+                      線上註冊咖啡機可享2年保固
+                    </div>
+                    <div class="prod-notice">
+                      *活動至2017/11/13, 折價將自動顯示於結帳頁面
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
     <section id="mix-fashion" class="grid romantic">
+      <img src="./content/img/m/coffee-bean.png" srcset="./content/img/m/coffee-bean@2x.png 2x,
+                     ./content/img/m/coffee-bean@3x.png 3x" class="coffee-bean-right">
       <div class="container">
         <header class="row clearfix">
           <div class="column full">
@@ -142,10 +215,10 @@
         </header>
         <div class="prod-slider">
           <div class="prod-photo-wrap">
-            <div class="prod-photo"><img src="./content/img/C60P-TW-TI.png" srcset="./content/img/C60P-TW-TI@2x.png 2x, /content/img/C60P-TW-TI@3x.png 3x"></div>
+            <div class="prod-photo"><img src="./content/img/C60P-TW-TI.png" srcset="./content/img/C60P-TW-TI@2x.png 2x, ./content/img/C60P-TW-TI@3x.png 3x"></div>
           </div>
           <div class="prod-photo-wrap">
-            <div class="prod-photo"><img src="./content/img/A3WKC110-TW-RE.png" srcset="./content/img/A3WKC110-TW-RE@2x.png 2x, /content/img/A3WKC110-TW-RE@3x.png 3x"></div>
+            <div class="prod-photo"><img src="./content/img/A3WKC110-TW-RE.png" srcset="./content/img/A3WKC110-TW-RE@2x.png 2x, ./content/img/A3WKC110-TW-RE@3x.png 3x"></div>
           </div>
         </div>
         <div class="prod-list">
@@ -170,8 +243,78 @@
             <a class="btn" href="#">探索更多</a>
           </div>
         </div>
-        <img src="./content/img/m/coffee-bean.png" srcset="./content/img/m/coffee-bean@2x.png 2x,
-                     /content/img/m/coffee-bean@3x.png 3x" class="coffee-bean-right">
+      </div>
+      <div id="intro-box-prod03" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <article class="grid">
+            <div class="container">
+              <div class="row clearfix">
+                <div class="column full">
+                  <div class="prod-intro">
+                    <div class="prod-title">
+                      購買Pixie 系列 &奶泡機組合
+                      <strong>只要NT$6,100 (原價NT$8,680)</strong>
+                    </div>
+                    <div class="prod-detail">
+                      <ul>
+                        <li>體積（寬x深x高）：11.1 cm x 32.6 cm x 23.5 cm</li>
+                        <li>可拆卸式水箱：0.7 升</li>
+                        <li>膠囊儲存盒容量：9-11</li>
+                        <li>壓力：19 bar</li>
+                        <li>重量：3 公斤</li>
+                        <li>可自行設定或9分鐘後自動關機</li>
+                      </ul>
+                    </div>
+                    <div class="prod-note">
+                      折疊式滴盤適用於Macchiato玻璃杯
+                      <br> 線上註冊咖啡機可享2年保固
+                    </div>
+                    <div class="prod-notice">
+                      *活動至2017/11/13, 折價將自動顯示於結帳頁面
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div id="intro-box-prod04" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <article class="grid">
+            <div class="container">
+              <div class="row clearfix">
+                <div class="column full">
+                  <div class="prod-intro">
+                    <div class="prod-title">
+                      購買CitiZ 系列 &奶泡機組合
+                      <strong>只要NT$8,100 (原價NT$11,680)</strong>
+                    </div>
+                    <div class="prod-detail">
+                      <ul>
+                        <li>體積（寬x深x高）: 13 cm x 37.2 cm x 27.8 cm</li>
+                        <li>可拆卸式水箱: 1 升</li>
+                        <li>膠囊儲存盒容量: 10</li>
+                        <li>壓力: 19 bar</li>
+                        <li>重量: 3.4 公斤</li>
+                        <li>可自行設定或9分鐘後自動關機</li>
+                      </ul>
+                    </div>
+                    <div class="prod-note">
+                      折疊式滴盤適用於Macchiato玻璃杯
+                      <br> 線上註冊咖啡機可享2年保固
+                    </div>
+                    <div class="prod-notice">
+                      *活動至2017/11/13, 折價將自動顯示於結帳頁面
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
     <section id="master-doctrine" class="grid master">
@@ -186,12 +329,12 @@
           <div class="prod-photo-wrap">
             <div class="prod-photo">
               <a href="#" class="btn-limit-time-offer">享限時回饋禮</a>
-              <img src="./content/img/J520-TW-ME-NE.png" srcset="./content/img/J520-TW-ME-NE@2x.png 2x, /content/img/J520-TW-ME-NE@3x.png 3x">
+              <img src="./content/img/J520-TW-ME-NE.png" srcset="./content/img/J520-TW-ME-NE@2x.png 2x, ./content/img/J520-TW-ME-NE@3x.png 3x">
             </div>
           </div>
           <div class="prod-photo-wrap">
             <div class="prod-photo">
-              <img src="./content/img/F511-TW-RE-NE.png" srcset="./content/img/F511-TW-RE-NE@2x.png 2x, /content/img/F511-TW-RE-NE@3x.png 3x">
+              <img src="./content/img/F511-TW-RE-NE.png" srcset="./content/img/F511-TW-RE-NE@2x.png 2x, ./content/img/F511-TW-RE-NE@3x.png 3x">
             </div>
           </div>
         </div>
@@ -218,11 +361,82 @@
           </div>
         </div>
       </div>
+      <div id="intro-box-prod05" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <article class="grid">
+            <div class="container">
+              <div class="row clearfix">
+                <div class="column full">
+                  <div class="prod-intro">
+                    <div class="prod-title">
+                      LATTISSIMA TOUCH 魅力白/ 魅力紅
+                      <strong>只要NT$8,800 (原價NT$10,800)</strong>
+                    </div>
+                    <div class="prod-detail">
+                      <ul>
+                        <li>體積（寬x深x高）：17.3 cm x 32 cm x 25.8 cm</li>
+                        <li>可拆卸式水箱：0.9 升</li>
+                        <li>可移動式牛奶槽：0.35 升</li>
+                        <li>膠囊儲存盒容量：9</li>
+                        <li>壓力：19 bar</li>
+                        <li>重量：4.5 公斤</li>
+                        <li>可自行設定或9分鐘後自動關機</li>
+                      </ul>
+                    </div>
+                    <div class="prod-note">
+                      折疊式滴盤適用於Macchiato玻璃杯
+                      <br> 線上註冊咖啡機可享2年保固
+                    </div>
+                    <div class="prod-notice">
+                      *活動至2017/11/13, 折價將自動顯示於結帳頁面
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div id="intro-box-prod06" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <article class="grid">
+            <div class="container">
+              <div class="row clearfix">
+                <div class="column full">
+                  <div class="prod-intro">
+                    <div class="gift">享限時回饋禮</div>
+                    <div class="prod-title">
+                      2017 全新旗艦機 - 咖啡大師Creatista Plus
+                      <strong>新機價只要NT$14,800 (原價NT$18,880)</strong>
+                    </div>
+                    <div class="prod-detail">
+                      <h3>2017/11/13 購買 Creastista，再享限時四重禮(價值NT$5,880)</h3>
+                      <ul>
+                        <li>好禮一：免費獲贈 Touch Collection 杯乙組 (隨機出貨)</li>
+                        <li>好禮二：免費獲贈咖啡機除垢劑乙組(價值NT$450)</li>
+                        <li>好禮三：5組線上免運優惠碼</li>
+                        <li>好禮四：延長保固期至3年</li>
+                      </ul>
+                    </div>
+                    <div class="prod-note">
+                      贈品將自動顯示於購物車頁面
+                      <br> 免運優惠碼將隨機附贈，兌換期限至2018/12/31止
+                      <br> 購買機器後，需於2017/11/30 日前至專櫃、官網或客服專線完成咖啡機註冊，方可享有延長保固優惠
+                    </div>
+                    <div class="prod-notice">
+                      *活動至2017/11/13, 折價將自動顯示於結帳頁面
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
-    <section id="all-list" class="grid">
-      <img src="./content/img/m/rectangle-2.png" srcset="./content/img/m/rectangle-2@2x.png 2x, /content/img/m/rectangle-2@3x.png 3x">
-    </section>
-    <section id="set-list" class="grid sets">
+    <section id="set-list" class="grid sets promo-case-track">
       <div class="container">
         <header class="row clearfix">
           <div class="column full">
@@ -232,16 +446,16 @@
         </header>
         <div class="prod-slider">
           <div class="prod-photo-wrap">
-            <div class="prod-photo"><img src="./content/img/set/101249.png" srcset="./content/img/set/101249@2x.png 2x, /content/img/set/101249@3x.png 3x"></div>
+            <div class="prod-photo"><img src="./content/img/set/101249.png" srcset="./content/img/set/101249@2x.png 2x, ./content/img/set/101249@3x.png 3x"></div>
           </div>
           <div class="prod-photo-wrap">
-            <div class="prod-photo"><img src="./content/img/set/101250.png" srcset="./content/img/set/101250@2x.png 2x, /content/img/set/101250@3x.png 3x"></div>
+            <div class="prod-photo"><img src="./content/img/set/101250.png" srcset="./content/img/set/101250@2x.png 2x, ./content/img/set/101250@3x.png 3x"></div>
           </div>
           <div class="prod-photo-wrap">
-            <div class="prod-photo"><img src="./content/img/set/102019.png" srcset="./content/img/set/102019@2x.png 2x, /content/img/set/102019@3x.png 3x"></div>
+            <div class="prod-photo"><img src="./content/img/set/102019.png" srcset="./content/img/set/102019@2x.png 2x, ./content/img/set/102019@3x.png 3x"></div>
           </div>
           <div class="prod-photo-wrap">
-            <div class="prod-photo"><img src="./content/img/set/102020.png" srcset="./content/img/set/102020@2x.png 2x, /content/img/set/102020@3x.png 3x"></div>
+            <div class="prod-photo"><img src="./content/img/set/102020.png" srcset="./content/img/set/102020@2x.png 2x, ./content/img/set/102020@3x.png 3x"></div>
           </div>
         </div>
         <div class="prod-list">
@@ -287,242 +501,25 @@
         <a href="https://www.nespresso.com/mobile/tw/zh/catalog" title="探索全系列咖啡膠囊">
           <div class="promo-all-list">
             <div class="circle-icon">
-              <img src="./content/img/icon-capsule.svg" class="icon-capsule">
+              <img src="../content/img/icon-capsule.svg" class="icon-capsule">
             </div>
             探索全系列咖啡膠囊
           </div>
           <img src="./content/img/m/footer.png" srcset="./content/img/m/footer@2x.png 2x,
-                     /content/img/m/footer@3x.png 3x" class="footer-promo-img">
+                     ./content/img/m/footer@3x.png 3x" class="footer-promo-img">
         </a>
       </footer>
     </section>
+    <section id="all-list" class="grid all-list">
+      <a href="https://www.nespresso.com/mobile/tw/zh/catalog">
+      <img src="./content/img/m/rectangle-2.png" srcset="./content/img/m/rectangle-2@2x.png 2x, ./content/img/m/rectangle-2@3x.png 3x">
+      </a>
+    </section>
   </main>
-  <!-- The Modal List -->
-  <div id="intro-box-prod01" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <article class="grid">
-        <div class="container">
-          <div class="row clearfix">
-            <div class="column full">
-              <div class="prod-intro">
-                <div class="prod-title">
-                  2017 全新史上最迷你咖啡機
-                  <strong>Essenza mini <br>全系列現折 NT$500</strong>
-                </div>
-                <div class="prod-detail">
-                  <ul>
-                    <li>體積（寬x深x高）：11 cm x 32.5 cm x 20.5 cm </li>
-                    <li>可拆卸式水箱：0.6 升 </li>
-                    <li>膠囊儲存盒容量：6 </li>
-                    <li>壓力：19 bar </li>
-                    <li>重量：2.3 公斤 </li>
-                    <li>可自行設定或9分鐘後自動關機</li>
-                  </ul>
-                </div>
-                <div class="prod-note">
-                  線上註冊咖啡機可享2年保固
-                </div>
-                <div class="prod-notice">
-                  *活動至2017/11/13, 折價將自動顯示於結帳頁面
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-  <div id="intro-box-prod02" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <article class="grid">
-        <div class="container">
-          <div class="row clearfix">
-            <div class="column full">
-              <div class="prod-intro">
-                <div class="prod-title">
-                  Nespresso 入門經典款
-                  <strong>Inissia 全系列單機現折NT$1,000</strong>
-                </div>
-                <div class="prod-detail">
-                  <ul>
-                    <li>體積（寬x深x高）：12 cm x 32.1 cm x 23 cm</li>
-                    <li>可拆卸式水箱：0.8升</li>
-                    <li>膠囊儲存盒容量：10</li>
-                    <li>壓力：19 bar</li>
-                    <li>重量：2.4 公斤</li>
-                    <li>可自行設定或9分鐘後自動關機</li>
-                  </ul>
-                </div>
-                <div class="prod-note">
-                  線上註冊咖啡機可享2年保固
-                </div>
-                <div class="prod-notice">
-                  *活動至2017/11/13, 折價將自動顯示於結帳頁面
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-  <div id="intro-box-prod03" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <article class="grid">
-        <div class="container">
-          <div class="row clearfix">
-            <div class="column full">
-              <div class="prod-intro">
-                <div class="prod-title">
-                  購買Pixie 系列 &奶泡機組合
-                  <strong>只要NT$6,100 (原價NT$8,680)</strong>
-                </div>
-                <div class="prod-detail">
-                  <ul>
-                    <li>體積（寬x深x高）：11.1 cm x 32.6 cm x 23.5 cm</li>
-                    <li>可拆卸式水箱：0.7 升</li>
-                    <li>膠囊儲存盒容量：9-11</li>
-                    <li>壓力：19 bar</li>
-                    <li>重量：3 公斤</li>
-                    <li>可自行設定或9分鐘後自動關機</li>
-                  </ul>
-                </div>
-                <div class="prod-note">
-                  折疊式滴盤適用於Macchiato玻璃杯
-                  <br> 線上註冊咖啡機可享2年保固
-                </div>
-                <div class="prod-notice">
-                  *活動至2017/11/13, 折價將自動顯示於結帳頁面
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-  <div id="intro-box-prod04" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <article class="grid">
-        <div class="container">
-          <div class="row clearfix">
-            <div class="column full">
-              <div class="prod-intro">
-                <div class="prod-title">
-                  購買CitiZ 系列 &奶泡機組合
-                  <strong>只要NT$8,100 (原價NT$11,680)</strong>
-                </div>
-                <div class="prod-detail">
-                  <ul>
-                    <li>體積（寬x深x高）: 13 cm x 37.2 cm x 27.8 cm</li>
-                    <li>可拆卸式水箱: 1 升</li>
-                    <li>膠囊儲存盒容量: 10</li>
-                    <li>壓力: 19 bar</li>
-                    <li>重量: 3.4 公斤</li>
-                    <li>可自行設定或9分鐘後自動關機</li>
-                  </ul>
-                </div>
-                <div class="prod-note">
-                  折疊式滴盤適用於Macchiato玻璃杯
-                  <br> 線上註冊咖啡機可享2年保固
-                </div>
-                <div class="prod-notice">
-                  *活動至2017/11/13, 折價將自動顯示於結帳頁面
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-  <div id="intro-box-prod05" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <article class="grid">
-        <div class="container">
-          <div class="row clearfix">
-            <div class="column full">
-              <div class="prod-intro">
-                <div class="prod-title">
-                  LATTISSIMA TOUCH 魅力白/ 魅力紅
-                  <strong>只要NT$8,800 (原價NT$10,800)</strong>
-                </div>
-                <div class="prod-detail">
-                  <ul>
-                    <li>體積（寬x深x高）：17.3 cm x 32 cm x 25.8 cm</li>
-                    <li>可拆卸式水箱：0.9 升</li>
-                    <li>可移動式牛奶槽：0.35 升</li>
-                    <li>膠囊儲存盒容量：9</li>
-                    <li>壓力：19 bar</li>
-                    <li>重量：4.5 公斤</li>
-                    <li>可自行設定或9分鐘後自動關機</li>
-                  </ul>
-                </div>
-                <div class="prod-note">
-                  折疊式滴盤適用於Macchiato玻璃杯
-                  <br> 線上註冊咖啡機可享2年保固
-                </div>
-                <div class="prod-notice">
-                  *活動至2017/11/13, 折價將自動顯示於結帳頁面
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-  <div id="intro-box-prod06" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <article class="grid">
-        <div class="container">
-          <div class="row clearfix">
-            <div class="column full">
-              <div class="prod-intro">
-                <div class="gift">享限時回饋禮</div>
-                <div class="prod-title">
-                  2017 全新旗艦機 - 咖啡大師Creatista Plus
-                  <strong>新機價只要NT$14,800 (原價NT$18,880)</strong>
-                </div>
-                <div class="prod-detail">
-                  <h3>2017/11/13 購買 Creastista，再享限時四重禮(價值NT$5,880)</h3>
-                  <ul>
-                    <li>好禮一：免費獲贈 Touch Collection 杯乙組 (隨機出貨)</li>
-                    <li>好禮二：免費獲贈咖啡機除垢劑乙組(價值NT$450)</li>
-                    <li>好禮三：5組線上免運優惠碼</li>
-                    <li>好禮四：延長保固期至3年</li>
-                  </ul>
-                </div>
-                <div class="prod-note">
-                  贈品將自動顯示於購物車頁面
-                  <br> 免運優惠碼將隨機附贈，兌換期限至2018/12/31止
-                  <br> 購買機器後，需於2017/11/30 日前至專櫃、官網或客服專線完成咖啡機註冊，方可享有延長保固優惠
-                </div>
-                <div class="prod-notice">
-                  *活動至2017/11/13, 折價將自動顯示於結帳頁面
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
-  <script src="./content/js/mobile.js"></script>
+  <script src="./scripts/mobile.js"></script>
+  <script src="./scripts/ad_track.js"></script>
 </body>
 
 </html>

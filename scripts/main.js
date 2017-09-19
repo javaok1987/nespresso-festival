@@ -1,12 +1,8 @@
 // Get the modal
-var $modal = {};
-
-
 $('.popup-modal').on('click', function() {
-  var $this = $(this);
-  $modal = $('#intro-box-' + $this.data('pid'));
+  var $this = $(this),
+    $modal = $('#intro-box-' + $this.data('pid'));
   $modal.fadeIn('slow')
-    .off()
     .find('.close').on('click', function() {
       $modal.fadeOut('slow')
     });
