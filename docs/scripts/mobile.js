@@ -26,13 +26,16 @@ $(function() {
 });
 
 
-var bindSlickEvent = function($slider, padding) {
+var bindSlickEvent = function(idx, slider) {
+  var $slider = $(slider);
   $slider.find('.prod-slider').slick({
-    centerMode: true,
-    centerPadding: padding,
-    slidesToShow: 1,
     infinite: false,
-    arrows: false
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    mobileFirst: true,
+    useCSS: true,
+    useTransform: true
   });
   $slider.find('.prod').get(0).style.visibility = 'visible';
   $slider.find('.prod-slider').on('afterChange', function(event, slick, currentSlide, nextSlide) {
@@ -42,9 +45,4 @@ var bindSlickEvent = function($slider, padding) {
   });
 };
 
-$.each($('#minimalism,#mix-fashion,#master-doctrine'), function(idx, slider) {
-  bindSlickEvent($(slider), '25%');
-});
-
-
-bindSlickEvent($('#set-list'), '18%');
+$.each($('#minimalism,#mix-fashion,#master-doctrine,#set-list'), bindSlickEvent);

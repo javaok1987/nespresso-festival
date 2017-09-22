@@ -4,7 +4,7 @@
 #nespresso-festival-mobile {
   .modal {
     position: absolute;
-    z-index: 1;
+    z-index: 999;
     top: 0;
     left: 50%;
 
@@ -114,8 +114,8 @@
       line-height: 30px;
 
       position: absolute;
-      top: 48px;
-      left: 0;
+      top: 70px;
+      left: 50px;
 
       width: 120px;
       height: 30px;

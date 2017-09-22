@@ -37,9 +37,7 @@ $cover-color: #deceab;
     }
     &:hover {
       &:after {
-        transition: transform .2s, opacity .2s;
-        transform: scale(1.5);
-
+        transition: transform .2s, opacity .2s; // transform: scale(1.5);
         opacity: 0;
       }
     }

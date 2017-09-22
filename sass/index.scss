@@ -29,23 +29,24 @@ body {
 }
 
 #nespresso-festival-web {
+  min-width: 996px;
   a {
     display: inline-block;
 
     text-align: center;
     text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
   }
   section {
-    min-width: 996px;
     padding: 0;
     padding-top: 50px;
   }
   .container {
     position: relative;
 
-    overflow: hidden; // @media (max-width: 1024px) {
-    // min-width: 996px;
-    // }
+    overflow: hidden;
     header {
       text-align: center;
       h3 {
@@ -165,7 +166,7 @@ body {
     }
   }
   .prod-list {
-    max-width: 1280px; // position: relative;
+    max-width: 1280px;
     margin: 0 auto;
     margin-top: 40px;
 
@@ -305,7 +306,7 @@ body {
       top: 330px;
     }
     header {
-      margin-top: 270px;
+      margin-top: 240px;
       h3,
       span {
         color: $font-color-inverse;
@@ -430,7 +431,7 @@ body {
   .all-list {
     width: 100%;
     padding-top: 0;
-
+padding-bottom: 177px;
     background-color: $color-second;
     &.fixed {
       margin-top: 350px;
@@ -441,6 +442,9 @@ body {
       margin: 0 auto;
 
       text-align: left;
+      @media (max-width: 1280px) {
+        width: 100%;
+      }
       .item,
       .more {
         position: relative;
@@ -453,26 +457,31 @@ body {
         margin-left: 14px;
 
         text-align: center;
-        @media (max-width: 1024px) {
-          margin-left: -20px;
+        @media (max-width: 1280px) {
+          width: calc(90% / 7);
+          margin-left: 0;
         }
         .item-name {
           font-weight: $font-weight-bold;
 
-          position: absolute;
-          left: 0;
-
-          width: 150px;
+          min-width: 150px;
           margin-top: 30px;
 
-          color: $font-color-default;
+          text-align: center;
+          vertical-align: top;
+
+          color: #e6e6e6;
         }
         .item-photo {
           object-fit: contain;
         }
       }
       .more {
-        width: 250px;
+        width: auto;
+        height: calc(100% - 30px);
+        padding-top: 76px;
+
+        vertical-align: top;
         a {
           font-size: 24px;
 
@@ -489,6 +498,9 @@ body {
           &:hover {
             text-decoration: none;
           }
+          @media (max-width: 1280px) {
+            font-size: 20px;
+          }
         }
       }
     }
@@ -497,6 +509,7 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     margin-top: 12px;
+        padding-bottom: 72px;
     .set-item {
       margin: 0 auto;
       padding-top: 56px;
@@ -504,7 +517,7 @@ body {
       text-align: center;
       h4 {
         font-size: 20px;
-        font-weight: $font-weight-bold;
+        font-weight: 400;
         line-height: 28px;
 
         color: $font-color-white;
@@ -551,61 +564,135 @@ body {
   .footer {
     z-index: 999;
 
+    max-width: 1280px;
+
+    height: 177px;
+    margin: 0 auto;
     margin-top: 72px;
     padding-bottom: 0;
-    &.fixed {
-      position: fixed;
-      bottom: 0;
-
-      padding-bottom: 0;
-
-      background-color: $background-color-default;
-      .promo-all-list {
-        right: 14%;
+    .row {
+      > :first-child {
+        width: 10%;
       }
     }
     .footer-promo-msg {
-      width: 1280px;
-      height: 155px;
-      margin-top: 20px;
+      float: right;
+
+      margin-top: 50px;
       padding: 0;
+      padding-right: 3%;
+
+      text-align: right;
     }
     .footer-promo-img {
       z-index: -1;
 
       width: 100%;
       height: 100%;
+      margin-bottom: -20px;
       @media (max-width: 1024px) {
         margin-left: -12%;
       }
+      @media (max-width: 1280px) {
+        margin-left: 0;
+      }
+    }
+    .promo-notice {
+      width: auto;
     }
     .promo-all-list {
       font-size: 20px;
       line-height: 80px;
 
-      position: absolute;
-      right: 5%;
-      bottom: 20%;
+      position: relative;
 
-      width: 289px;
+      min-width: 289px;
       height: 80px;
-      padding-left: 80px;
+      padding-right: 10%;
 
-      text-align: left;
+      text-align: right;
 
-      color: $font-color-default;
-      border: solid 1px $color-main;
-      border-radius: 100px;
-      .circle-icon {
-        position: absolute;
-        top: 12px;
-        left: 15px;
-
-        display: inline-block;
-
-        width: 56.2px;
-        height: 56px;
+      color: #e6e6e6;
+      @media (max-width: 1280px) {
+        width: 49%;
       }
     }
+    .circle-icon {
+      position: absolute;
+      top: 12px;
+      left: 15px;
+
+      display: inline-block;
+
+      width: 56.2px;
+      height: 56px;
+    }
+    .circle-promo {
+      width: 121px;
+      height: 121px;
+      margin-top: 28px;
+      padding-top: 30px;
+
+      border: solid 5px #deceab;
+      border-radius: 50%;
+      box-shadow: 0 2px 10px 0 rgba(222, 206, 171, .36);
+      div {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.2;
+
+        width: 60px;
+        height: 70px;
+        margin: 0 auto;
+
+        text-align: center;
+        text-align: center;
+
+        color: #deceab;
+      }
+      b {
+        font-size: 30px;
+      }
+    }
+    .promo-notice {
+      font-size: 24px;
+      line-height: 1.5;
+
+      width: 480px;
+      margin-top: 56px;
+      margin-left: 32px;
+    }
+  }
+  .fixed-footer {
+    position: fixed;
+    bottom: 0;
+
+    display: none;
+
+    width: 100%;
+    max-width: none;
+    padding-bottom: 0;
+
+    background-color: $background-color-default;
+    .promo-all-list {
+      right: 14%;
+    }
+  }
+  .ani-imgtop--festival:hover {
+    transform: translateY(-15px)!important;
+  }
+  .ani-imgtop--festival {
+    transition: all .4s !important;
+  }
+  .modal__btn--shop {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+
+    margin-top: 0;
+    padding: 0 30px;
+  }
+  .padding-top-30 {
+    padding-top: 30px !important;
   }
 }

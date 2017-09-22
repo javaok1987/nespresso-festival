@@ -1,0 +1,68 @@
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+
+  display: block;
+
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+
+  cursor: pointer;
+
+  color: #fff;
+  color: transparent;
+  border: 1px solid black;
+  border-width: 5px 5px 0 0;
+  border-style: solid;
+  border-color: #fafafa;
+  outline: none;
+  outline: none;
+  background: transparent;
+}
+
+#mix-fashion {
+  .slick-prev,
+  .slick-next {
+    border-color: #666;
+  }
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  opacity: 1;
+}
+
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled {
+  opacity: .25;
+}
+
+.slick-prev {
+  left: 2rem;
+
+  transform: rotate(-135deg);
+}
+
+[dir='rtl'] .slick-prev {
+  right: 2rem;
+  left: auto;
+}
+
+.slick-next {
+  right: 2rem;
+
+  transform: rotate(45deg);
+}
+
+[dir='rtl'] .slick-next {
+  right: auto;
+  left: 2rem;
+}

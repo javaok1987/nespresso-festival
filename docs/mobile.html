@@ -23,8 +23,6 @@
   <!--[if lt IE 9]>
       <script src="/js/html5shiv.js"></script>
     <![endif]-->
-  <!-- Google Fonts -->
-  <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 </head>
 
 <body id="nespresso-festival-mobile">
@@ -36,16 +34,16 @@
       <div class="secondTitle">
         咖啡機全系列最高折扣NT$4,000！
       </div>
-      <a href="#" class="btn">即刻體驗</a>
+      <a href="#my-favourite" class="btn">即刻體驗</a>
     </div>
   </header>
   <main role="main">
     <nav class="grid nav">
-      <div class="container">
+      <div class="container" id="my-favourite">
         <header class="row clearfix">
           <div class="column full">
             <h3>我喝的不是咖啡 ‧ 是藝術</h3>
-            <span>尋找最速配的咖啡機，您是何種咖啡愛好者？</span>
+            <span>尋找最速配的膠囊咖啡機，您是何種咖啡愛好者？</span>
           </div>
         </header>
         <div class="row prod-list clearfix">
@@ -99,11 +97,11 @@
             <span>黑咖啡釋放最簡單純粹的原味<br>義式膠囊咖啡機 - 最高享NT$1,000 優惠！</span>
           </div>
         </header>
-        <div class="prod-slider">
-          <div class="prod-photo-wrap">
+        <div class="slider prod-slider">
+          <div class="prod-photo-wrap popup-modal" data-pid="prod01">
             <div class="prod-photo"><img src="./content/img/C30-TW-WH-NE.png" srcset="./content/img/C30-TW-WH-NE@2x.png 2x, ./content/img/C30-TW-WH-NE@3x.png 3x"></div>
           </div>
-          <div class="prod-photo-wrap">
+          <div class="prod-photo-wrap popup-modal" data-pid="prod02">
             <div class="prod-photo"><img src="./content/img/C40-TW-RE-NE.png" srcset="./content/img/C40-TW-RE-NE@2x.png 2x, ./content/img/C40-TW-RE-NE@3x.png 3x"></div>
           </div>
         </div>
@@ -116,7 +114,7 @@
             <div class="prod-price">
               <span class="prod-lastprice">NT$4,300</span> 特價 NT$3,800
             </div>
-            <a class="btn" href="#">探索更多</a>
+            <a class="btn" target="_blank" href="https://www.nespresso.com/mobile/tw/zh/products/Machine/Essenza-Mini-C30-%E7%B4%94%E6%BD%94%E7%99%BD/p/nespresso-essenza-mini-white-coffee-machine">探索更多</a>
           </div>
           <div class="prod">
             <div class="prod-name">
@@ -126,7 +124,7 @@
             <div class="prod-price">
               <span class="prod-lastprice">NT$4,300</span> 特價 NT$3,300
             </div>
-            <a class="btn" href="#">探索更多</a>
+            <a class="btn" target="_blank" href="https://www.nespresso.com/mobile/tw/zh/%E5%92%96%E5%95%A1%E6%A9%9F/Inissia/Inissia-C40-%E7%B6%93%E5%85%B8%E7%89%88%E5%AF%B6%E7%9F%B3%E7%B4%85/p/inissia-ruby-red">探索更多</a>
           </div>
         </div>
       </div>
@@ -141,7 +139,7 @@
                   <div class="prod-intro">
                     <div class="prod-title">
                       2017 全新史上最迷你咖啡機
-                      <strong>Essenza mini <br>全系列現折 NT$500</strong>
+                      <span>Essenza mini <br>全系列現折 NT$500</span>
                     </div>
                     <div class="prod-detail">
                       <ul>
@@ -152,9 +150,6 @@
                         <li>重量：2.3 公斤 </li>
                         <li>可自行設定或9分鐘後自動關機</li>
                       </ul>
-                    </div>
-                    <div class="prod-note">
-                      線上註冊咖啡機可享2年保固
                     </div>
                     <div class="prod-notice">
                       *活動至2017/11/13, 折價將自動顯示於結帳頁面
@@ -176,7 +171,7 @@
                   <div class="prod-intro">
                     <div class="prod-title">
                       Nespresso 入門經典款
-                      <strong>Inissia 全系列單機現折NT$1,000</strong>
+                      <span>Inissia 全系列單機現折NT$1,000</span>
                     </div>
                     <div class="prod-detail">
                       <ul>
@@ -202,10 +197,10 @@
         </div>
       </div>
     </section>
-    <section id="mix-fashion" class="grid romantic">
+    <section class="grid romantic">
       <img src="./content/img/m/coffee-bean.png" srcset="./content/img/m/coffee-bean@2x.png 2x,
                      ./content/img/m/coffee-bean@3x.png 3x" class="coffee-bean-right">
-      <div class="container">
+      <div id="mix-fashion" style="margin-top: 40px;" class="container">
         <header class="row clearfix">
           <div class="column full">
             <h3>混搭新鮮牛奶的浪漫主義</h3>
@@ -214,10 +209,10 @@
           </div>
         </header>
         <div class="prod-slider">
-          <div class="prod-photo-wrap">
+          <div class="prod-photo-wrap popup-modal" data-pid="prod03">
             <div class="prod-photo"><img src="./content/img/C60P-TW-TI.png" srcset="./content/img/C60P-TW-TI@2x.png 2x, ./content/img/C60P-TW-TI@3x.png 3x"></div>
           </div>
-          <div class="prod-photo-wrap">
+          <div class="prod-photo-wrap popup-modal" data-pid="prod04">
             <div class="prod-photo"><img src="./content/img/A3WKC110-TW-RE.png" srcset="./content/img/A3WKC110-TW-RE@2x.png 2x, ./content/img/A3WKC110-TW-RE@3x.png 3x"></div>
           </div>
         </div>
@@ -230,7 +225,7 @@
             <div class="prod-price">
               <span class="prod-lastprice">NT$8,680</span> 特價 NT$6,100
             </div>
-            <a class="btn" href="#">探索更多</a>
+            <a class="btn" target="_blank" href="https://www.nespresso.com/mobile/tw/zh/%E5%92%96%E5%95%A1%E6%A9%9F/pixie/Pixie-%E9%88%A6%E9%87%91%E5%B1%AC-%26-Aeroccino3-%E9%BB%91%E8%89%B2%E7%B5%84%E5%90%88/p/pixie-electric-titan-bundle-black">探索更多</a>
           </div>
           <div class="prod">
             <div class="prod-name">
@@ -254,7 +249,7 @@
                   <div class="prod-intro">
                     <div class="prod-title">
                       購買Pixie 系列 &奶泡機組合
-                      <strong>只要NT$6,100 (原價NT$8,680)</strong>
+                      <span>只要NT$6,100 (原價NT$8,680)</span>
                     </div>
                     <div class="prod-detail">
                       <ul>
@@ -268,7 +263,6 @@
                     </div>
                     <div class="prod-note">
                       折疊式滴盤適用於Macchiato玻璃杯
-                      <br> 線上註冊咖啡機可享2年保固
                     </div>
                     <div class="prod-notice">
                       *活動至2017/11/13, 折價將自動顯示於結帳頁面
@@ -290,7 +284,7 @@
                   <div class="prod-intro">
                     <div class="prod-title">
                       購買CitiZ 系列 &奶泡機組合
-                      <strong>只要NT$8,100 (原價NT$11,680)</strong>
+                      <span>只要NT$8,100 (原價NT$11,680)</span>
                     </div>
                     <div class="prod-detail">
                       <ul>
@@ -304,7 +298,6 @@
                     </div>
                     <div class="prod-note">
                       折疊式滴盤適用於Macchiato玻璃杯
-                      <br> 線上註冊咖啡機可享2年保固
                     </div>
                     <div class="prod-notice">
                       *活動至2017/11/13, 折價將自動顯示於結帳頁面
@@ -317,7 +310,7 @@
         </div>
       </div>
     </section>
-    <section id="master-doctrine" class="grid master">
+    <section id="master-doctrine" class="grid master" style="margin-top: 40px;">
       <div class="container">
         <header class="row clearfix">
           <div class="column full">
@@ -328,13 +321,13 @@
         <div class="prod-slider">
           <div class="prod-photo-wrap">
             <div class="prod-photo">
-              <a href="#" class="btn-limit-time-offer">享限時回饋禮</a>
-              <img src="./content/img/J520-TW-ME-NE.png" srcset="./content/img/J520-TW-ME-NE@2x.png 2x, ./content/img/J520-TW-ME-NE@3x.png 3x">
+              <div class="btn-limit-time-offer">享限時回饋禮</div>
+              <img class="popup-modal" data-pid="prod06" src="./content/img/J520-TW-ME-NE.png" srcset="./content/img/J520-TW-ME-NE@2x.png 2x, ./content/img/J520-TW-ME-NE@3x.png 3x">
             </div>
           </div>
           <div class="prod-photo-wrap">
             <div class="prod-photo">
-              <img src="./content/img/F511-TW-RE-NE.png" srcset="./content/img/F511-TW-RE-NE@2x.png 2x, ./content/img/F511-TW-RE-NE@3x.png 3x">
+              <img class="popup-modal" data-pid="prod05" src="./content/img/F511-TW-RE-NE.png" srcset="./content/img/F511-TW-RE-NE@2x.png 2x, ./content/img/F511-TW-RE-NE@3x.png 3x">
             </div>
           </div>
         </div>
@@ -347,7 +340,7 @@
             <div class="prod-price">
               <span class="prod-lastprice">NT$18,800</span> 特價 NT$14,800
             </div>
-            <a class="btn" href="#">探索更多</a>
+            <a class="btn" target="_blank" href="https://www.nespresso.com/tw/zh/creatista-machines-range">探索更多</a>
           </div>
           <div class="prod">
             <div class="prod-name">
@@ -357,7 +350,7 @@
             <div class="prod-price">
               <span class="prod-lastprice">NT$10,800</span> 特價 NT$8,800
             </div>
-            <a class="btn" href="#">探索更多</a>
+            <a class="btn" target="_blank" href="https://www.nespresso.com/mobile/tw/zh/products/Machine/Lattissima-Touch-%E9%AD%85%E5%8A%9B%E7%B4%85/p/lattissima-touch-glam-red">探索更多</a>
           </div>
         </div>
       </div>
@@ -371,7 +364,7 @@
                   <div class="prod-intro">
                     <div class="prod-title">
                       LATTISSIMA TOUCH 魅力白/ 魅力紅
-                      <strong>只要NT$8,800 (原價NT$10,800)</strong>
+                      <span>只要NT$8,800 (原價NT$10,800)</span>
                     </div>
                     <div class="prod-detail">
                       <ul>
@@ -386,7 +379,6 @@
                     </div>
                     <div class="prod-note">
                       折疊式滴盤適用於Macchiato玻璃杯
-                      <br> 線上註冊咖啡機可享2年保固
                     </div>
                     <div class="prod-notice">
                       *活動至2017/11/13, 折價將自動顯示於結帳頁面
@@ -409,7 +401,7 @@
                     <div class="gift">享限時回饋禮</div>
                     <div class="prod-title">
                       2017 全新旗艦機 - 咖啡大師Creatista Plus
-                      <strong>新機價只要NT$14,800 (原價NT$18,880)</strong>
+                      <span>新機價只要NT$14,800 (原價NT$18,880)</span>
                     </div>
                     <div class="prod-detail">
                       <h3>2017/11/13 購買 Creastista，再享限時四重禮(價值NT$5,880)</h3>
@@ -436,80 +428,78 @@
         </div>
       </div>
     </section>
-    <section id="set-list" class="grid sets promo-case-track">
-      <div class="container">
-        <header class="row clearfix">
-          <div class="column full">
-            <h3>- 開始您的咖啡創作旅程 -  </h3>
-            <span>享受Nespresso 的高品質義式咖啡<br>精選暢銷膠囊組，一次收藏經典咖啡風味</span>
+    <div style="background:linear-gradient(to bottom, rgba(186, 162, 116, 0.15), rgba(0, 0, 0, 0.0)">
+      <section id="set-list" class="grid sets promo-case-track">
+        <div class="container">
+          <header class="row clearfix">
+            <div class="column full">
+              <h3>- 開始您的咖啡創作旅程 -  </h3>
+              <span>享受Nespresso 的高品質義式咖啡<br>精選暢銷膠囊組，一次收藏經典咖啡風味</span>
+            </div>
+          </header>
+          <div class="prod-slider">
+            <div class="prod-photo-wrap">
+              <div class="prod-photo"><img src="./content/img/set/101249.png" srcset="./content/img/set/101249@2x.png 2x, ./content/img/set/101249@3x.png 3x"></div>
+            </div>
+            <div class="prod-photo-wrap">
+              <div class="prod-photo"><img src="./content/img/set/101250.png" srcset="./content/img/set/101250@2x.png 2x, ./content/img/set/101250@3x.png 3x"></div>
+            </div>
+            <div class="prod-photo-wrap">
+              <div class="prod-photo"><img src="./content/img/set/102019.png" srcset="./content/img/set/102019@2x.png 2x, ./content/img/set/102019@3x.png 3x"></div>
+            </div>
+            <div class="prod-photo-wrap">
+              <div class="prod-photo"><img src="./content/img/set/102020.png" srcset="./content/img/set/102020@2x.png 2x, ./content/img/set/102020@3x.png 3x"></div>
+            </div>
           </div>
-        </header>
-        <div class="prod-slider">
-          <div class="prod-photo-wrap">
-            <div class="prod-photo"><img src="./content/img/set/101249.png" srcset="./content/img/set/101249@2x.png 2x, ./content/img/set/101249@3x.png 3x"></div>
-          </div>
-          <div class="prod-photo-wrap">
-            <div class="prod-photo"><img src="./content/img/set/101250.png" srcset="./content/img/set/101250@2x.png 2x, ./content/img/set/101250@3x.png 3x"></div>
-          </div>
-          <div class="prod-photo-wrap">
-            <div class="prod-photo"><img src="./content/img/set/102019.png" srcset="./content/img/set/102019@2x.png 2x, ./content/img/set/102019@3x.png 3x"></div>
-          </div>
-          <div class="prod-photo-wrap">
-            <div class="prod-photo"><img src="./content/img/set/102020.png" srcset="./content/img/set/102020@2x.png 2x, ./content/img/set/102020@3x.png 3x"></div>
+          <div class="prod-list">
+            <div class="prod">
+              <div class="prod-name">
+                限量款大師首選濃烈5條裝
+              </div>
+              <div class="prod-price">
+                NT$1,000
+              </div>
+            </div>
+            <div class="prod">
+              <div class="prod-name">
+                限量款大師首選經典10條裝
+              </div>
+              <div class="prod-price">
+                NT$1,920
+              </div>
+            </div>
+            <div class="prod">
+              <div class="prod-name">
+                牛奶絕配五條精選組
+              </div>
+              <div class="prod-price">
+                NT$840
+              </div>
+            </div>
+            <div class="prod">
+              <div class="prod-name">
+                晨間大杯五條精選組
+              </div>
+              <div class="prod-price">
+                特價 NT$860
+              </div>
+            </div>
           </div>
         </div>
-        <div class="prod-list">
-          <div class="prod">
-            <div class="prod-name">
-              限量款大師首選濃烈5條裝
+        <footer class="footer">
+          <a target="_blank" href="https://www.nespresso.com/mobile/tw/zh/catalog" title="探索全系列咖啡膠囊">
+            <div class="promo-all-list">
+              <div class="circle-icon">
+                <img src="./content/img/icon-capsule.svg" class="icon-capsule">
+              </div>
+              探索全系列咖啡膠囊
             </div>
-            <div class="prod-price">
-              NT$1,000
-            </div>
-            <a class="btn" href="#">探索更多</a>
-          </div>
-          <div class="prod">
-            <div class="prod-name">
-              限量款大師首選經典10條裝
-            </div>
-            <div class="prod-price">
-              NT$1,920
-            </div>
-            <a class="btn" href="#">探索更多</a>
-          </div>
-          <div class="prod">
-            <div class="prod-name">
-              牛奶絕配五條精選組
-            </div>
-            <div class="prod-price">
-              NT$840
-            </div>
-            <a class="btn" href="#">探索更多</a>
-          </div>
-          <div class="prod">
-            <div class="prod-name">
-              晨間大杯五條精選組
-            </div>
-            <div class="prod-price">
-              特價 NT$860
-            </div>
-            <a class="btn" href="#">探索更多</a>
-          </div>
-        </div>
-      </div>
-      <footer class="footer">
-        <a href="https://www.nespresso.com/mobile/tw/zh/catalog" title="探索全系列咖啡膠囊">
-          <div class="promo-all-list">
-            <div class="circle-icon">
-              <img src="../content/img/icon-capsule.svg" class="icon-capsule">
-            </div>
-            探索全系列咖啡膠囊
-          </div>
-          <img src="./content/img/m/footer.png" srcset="./content/img/m/footer@2x.png 2x,
+            <img src="./content/img/m/footer.png" srcset="./content/img/m/footer@2x.png 2x,
                      ./content/img/m/footer@3x.png 3x" class="footer-promo-img">
-        </a>
-      </footer>
-    </section>
+          </a>
+        </footer>
+      </section>
+    </div>
     <section id="all-list" class="grid all-list">
       <a href="https://www.nespresso.com/mobile/tw/zh/catalog">
       <img src="./content/img/m/rectangle-2.png" srcset="./content/img/m/rectangle-2@2x.png 2x, ./content/img/m/rectangle-2@3x.png 3x">
@@ -519,7 +509,6 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
   <script src="./scripts/mobile.js"></script>
-  <script src="./scripts/ad_track.js"></script>
 </body>
 
 </html>
