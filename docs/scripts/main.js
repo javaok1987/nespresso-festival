@@ -54,9 +54,14 @@ var debounce = function(func, wait, immediate) {
 };
 
 var handleScrollEvent = debounce(function() {
-  if($(this).scrollTop() > $('#my-favourite').offset().top) {
+  var $window = $(this);
+  if($window.scrollTop() > $('#my-favourite').offset().top) {
     $('.fixed-footer').slideDown('slow');
-    window.removeEventListener('scroll', handleScrollEvent);
+    // window.removeEventListener('scroll', handleScrollEvent);
+  }
+
+  if($window.scrollTop() + $window.height() > $('#all-list').offset().top) {
+    $('.fixed-footer').hide();
   }
 
 }, 100); // 每100ms最多觸發一次.
